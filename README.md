@@ -5,12 +5,15 @@ Deep Learning Audio-to-Harmony Classifier
 
 Adapted from https://humblesoftwaredev.wordpress.com/2016/05/02/an-audio-dataset-and-ipython-notebook-for-training-a-convolutional-neural-network-to-distinguish-the-sound-of-foosball-goals-from-other-noises-using-tensorflow/
 
-Key changes:
+Key changes from above work:
 * moved from softmax one-hot classification to multi-label sigmoid classification 
 * classifying on pitch classes (https://en.wikipedia.org/wiki/Pitch_class)
-* generate "chords" from random weights applied to single-note samples added together
-* using the full FFT as opposed to the dimensionality-reduced Mel Spectrogram
-** this is necessary since the Mel spectrogram mainly captures timbre, not pitch content
+* refactored code and added diagnostic outputs for debugging the network
+* 2-dimensional convolutional networks and max-pooling weren't necessary in the original work to train model, so they were removed
+* replaced net with funnel-shaped fully-connected layers
+* generate "chords" from random weights applied to single-note samples added together (see data generation below)
+* using the full FFT as opposed to the dimensionality-reduced Mel Spectrogram -- this is necessary since the Mel spectrogram is lower resolution and captures timbre, not pitch content
+* only uses one frame of the FFT as opposed to the full spectrogram, motivating changes to the net structure
 
 Notes on data generation:
 * samples are created from Ableton by running the Max patch "music_MNIST_melody.maxpat"
