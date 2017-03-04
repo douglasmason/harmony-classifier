@@ -11,3 +11,8 @@ Key changes:
 * generate "chords" from random weights applied to single-note samples added together
 * using the full FFT as opposed to the dimensionality-reduced Mel Spectrogram
 ** this is necessary since the Mel spectrogram mainly captures timbre, not pitch content
+
+Notes:
+* samples are created from Ableton by running the Max patch "music_MNIST_melody.maxpat"
+* to work that, open ableton, set output to SoundFlower (2 ch), turn on Audactiy, have it read in SoundFlower (2ch), and run the Max Patch.
+* whichever track has recording enabled will produce the necessary notes. Save the Audacity to an aiff and save the "music_MNIST_metadata.txt" to an appropriate file
