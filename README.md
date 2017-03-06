@@ -25,6 +25,7 @@ Notes on data generation:
 
 Future work:
 * adding new sample banks
+* more data "jitter" such as detuning whole chords and individual notes within chords, more noise options
 * encoding all choices into easy-to-read hyper parameters
 * separating out the sample collection, data preparation, model running and evaluation sectdions since each part is expensive and don't need to be repeated
 * creating a data creation, model running, and model output infra so we can iterate through multiple hyper parameters and evaluate results without human intervention
