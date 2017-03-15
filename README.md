@@ -1,7 +1,7 @@
 # harmony-classifier
 Deep Learning Audio-to-Harmony Classifier
 
-2017 Koyote Science LLC
+Copyright 2017 Koyote Science LLC
 
 See my personal website http://www.douglasjmason.com/wordpress/?page_id=419 for more information and a general-audience introduction. 
 
@@ -23,9 +23,21 @@ Notes on data generation:
 * the current version only uses bank '0' and then relabels it.
 * whichever track has recording enabled will produce the necessary notes. Save the Audacity to an aiff and save the "music_MNIST_metadata.txt" to an appropriate file
 
-Future work:
-* adding new sample banks
-* more data "jitter" such as detuning whole chords and individual notes within chords, more noise options
-* encoding all choices into easy-to-read hyper parameters
-* separating out the sample collection, data preparation, model running and evaluation sectdions since each part is expensive and don't need to be repeated
-* creating a data creation, model running, and model output infra so we can iterate through multiple hyper parameters and evaluate results without human intervention
+Notes on running:
+* should run currently using a previously-trained model (models have a small footprint) by running all cells in Audio-to-Harmony Development.ipynb
+* to create samples dataframe run Build Samples DataFrame.ipynb
+* to create training data change the options at the top of Audio-to-Harmony Development.ipynb to True: load_training_data, append_training_data
+* if you have a training dataset you can now train the model by setting train_model to True!
+* please write to me if you have any comments or questions
+
+Changes between master and real-time-demo:
+* added many new sample banks
+* added more data "jitter" such as detuning whole chords and individual notes within chords, more noise options
+* encoded all choices into easy-to-read hyper parameters
+* separated out the sample collection, data preparation, model running and evaluation sectdions since each part is expensive and don't need to be repeated
+# added MIDI output of classification to see if it sounds right
+* added real-time listening and classification (works on Mac OSX)
+
+Future Work:
+* improve upon data creation methods to improve performance in real-world
+* improve upon data creation, model running, and model output infra so we can iterate through multiple hyper parameters and evaluate results without human intervention
