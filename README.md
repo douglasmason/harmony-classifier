@@ -35,7 +35,7 @@ Changes between master and real-time-demo:
 * added more data "jitter" such as detuning whole chords and individual notes within chords, more noise options
 * encoded all choices into easy-to-read hyper parameters
 * separated out the sample collection, data preparation, model running and evaluation sectdions since each part is expensive and don't need to be repeated
-# added MIDI output of classification to see if it sounds right
+* added MIDI output of classification to see if it sounds right
 * added real-time listening and classification (works on Mac OSX)
 
 Future Work:
