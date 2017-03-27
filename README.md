@@ -1,9 +1,11 @@
 # harmony-classifier
 Deep Learning Audio-to-Harmony Classifier
 
-2017 Koyote Science LLC
+![alt tag](http://koyotescience.com/wp-content/uploads/2017/03/cropped-cropped_howler.jpeg)
 
-See my personal website http://www.douglasjmason.com/wordpress/?page_id=419 for more information and a general-audience introduction. 
+Copyright 2017 Koyote Science LLC
+
+See my personal website http://www.douglasjmason.com/wordpress/?page_id=419 for more information and a general-audience introduction. See http://www.koyotescience.com for information about how we can use deep learning to grow your business.
 
 Adapted from https://humblesoftwaredev.wordpress.com/2016/05/02/an-audio-dataset-and-ipython-notebook-for-training-a-convolutional-neural-network-to-distinguish-the-sound-of-foosball-goals-from-other-noises-using-tensorflow/
 
